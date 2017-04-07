@@ -38,14 +38,18 @@ app.get('/', (request, response) => {
 		welcomeMessage: 'Welcome to our page!'
 		});
 });
-
 app.get('/about', (request, response) => {
 	response.render('about.hbs', {
 		pageTitle: 'About Page',
 		welcomeMessage: 'About us!'
 	});
 })
-
+app.get('/about', (request, response) => {
+	response.render('about.hbs', {
+		pageTitle: 'projects Page',
+		welcomeMessage: 'Portfolio Page'
+	});
+})
 app.get('/bad', (request, response) => {
 	response.send({
 		errMsg: 'Unable to Handle Request'
