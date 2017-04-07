@@ -41,12 +41,12 @@ app.get('/', (request, response) => {
 app.get('/about', (request, response) => {
 	response.render('about.hbs', {
 		pageTitle: 'About Page',
-		welcomeMessage: 'About us!'
+		welcomeMessage: 'About us'
 	});
 })
 app.get('/projects', (request, response) => {
 	response.render('projects.hbs', {
-		pageTitle: 'projects Page',
+		pageTitle: 'Projects Page',
 		welcomeMessage: 'Portfolio Page'
 	});
 })
